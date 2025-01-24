@@ -14,9 +14,17 @@
 - minimax-01
 
 ## Docker部署
+### 拉取
 ```bash
-docker pull mtxyt/heck2api:1.2
-docker run -p 8801:8801 mtxyt/heck2api:1.2
+docker pull mtxyt/heck2api:1.3
+```
+### 运行
+```bash
+docker run -p 8801:8801 mtxyt/heck2api:1.3
+```
+如果你想配置key可以用
+```bash
+docker run -p 8801:8801 -e AUTH_TOKEN=你的key mtxyt/heck2api:1.3
 ```
 
 ## 声明
