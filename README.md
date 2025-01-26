@@ -8,10 +8,9 @@
 
 ## 支持模型
 - gpt-4o-mini
-- deepseek
-- gemini-flash-1.5 
-- deepseek-reasoner
-- minimax-01
+- deepseek-chat
+- claude-3-haiku
+- gemini-1.5-flash
 
 ## Docker部署
 ### 拉取
@@ -20,11 +19,11 @@ docker pull mtxyt/heck2api:1.3
 ```
 ### 运行
 ```bash
-docker run -p 8801:8801 mtxyt/heck2api:1.3
+docker run -d -p 8802:8802 mtxyt/merlin2api:1.0
 ```
-如果你想配置key可以用
+如果你想配置uuid或key可以用
 ```bash
-docker run -p 8801:8801 -e AUTH_TOKEN=你的key mtxyt/heck2api:1.3
+docker run -d -p 8001:8001 -e UUID=your_uuid -e AUTH_TOKEN=your_token mtxyt/merlin2api:1.0
 ```
 
 ## 声明
